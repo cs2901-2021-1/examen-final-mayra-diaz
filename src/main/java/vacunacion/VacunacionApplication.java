@@ -65,10 +65,11 @@ public class VacunacionApplication {
                 }
                 default:{
                     logger.info("Opcion incorrecta.");
+                    break;
                 }
             }
-            o = scanner.nextInt();
             printOptions();
+            o = scanner.nextInt();
         }
     }
 
