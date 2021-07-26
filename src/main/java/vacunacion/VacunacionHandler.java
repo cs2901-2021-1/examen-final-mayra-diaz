@@ -43,6 +43,14 @@ public class VacunacionHandler {
         return centrosVacunacion.size();
     }
 
+    public void darDeBaja(int id){
+        centrosVacunacion.get(id).setEstado(false);
+    }
+
+    public void darDeAlta(int id){
+        centrosVacunacion.get(id).setEstado(true);
+    }
+
     public void agregarCentro(String ubicacion, String nombre){
         var id = centrosVacunacion.size();
         centrosVacunacion.put(id, new CentroVacunacion(id, ubicacion, nombre));

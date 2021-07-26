@@ -12,11 +12,24 @@ class VacunacionApplicationTests {
     void contextLoads() {
     }
 
-    /*@Test()
+    @Test()
     public void testMain() throws IOException, InterruptedException {
-        var in = "en\nes\nbanana";
+        var in = "mayra\n123\n-1";
         System.setIn(new ByteArrayInputStream(in.getBytes()));
         VacunacionApplication.main(null);
-    }*/
+    }
 
+    @Test()
+    public void testMain2() throws IOException, InterruptedException {
+        var in = "mayra\n123\n1\n-1";
+        System.setIn(new ByteArrayInputStream(in.getBytes()));
+        VacunacionApplication.main(null);
+    }
+
+    @Test()
+    public void testMain3() throws IOException, InterruptedException {
+        var in = "mayra\n123\n2\n-1";
+        System.setIn(new ByteArrayInputStream(in.getBytes()));
+        VacunacionApplication.main(null);
+    }
 }
